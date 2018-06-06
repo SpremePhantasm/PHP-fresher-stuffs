@@ -11,11 +11,14 @@ echo $testEven->isEven(314);
 /*check số nguyên tố*/
 class testPrime {
 	function isPrime($b) {
+		if (is_int($b) and $b>0) {
 		for ($x=3;$x<($b/2);$x++) {
 			if (($b%$x)==0) {echo $b." không phải là số nguyên tố"; break;}
 		};
 		echo $b." là số nguyên tố";
 	}
+	else { echo $b."không phải là số nguyên tố";}
+	}
 };
 $testPrime = new testPrime;
-echo $testPrime->isPrime(2);
+echo $testPrime->isPrime(47);
