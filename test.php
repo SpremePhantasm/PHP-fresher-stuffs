@@ -21,4 +21,4 @@ class testPrime {
 	}
 };
 $testPrime = new testPrime;
-echo $testPrime->isPrime(47);
+echo $testPrime->isPrime(-152);
