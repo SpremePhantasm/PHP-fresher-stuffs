@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*check số chẵn*/
 class testEven {
 	function isEven($a) {
@@ -17,8 +17,16 @@ class testPrime {
 		};
 		echo $b." là số nguyên tố";
 	}
-	else { echo $b."không phải là số nguyên tố";}
+	else { echo $b." không phải là số nguyên tố";}
 	}
 };
 $testPrime = new testPrime;
-echo $testPrime->isPrime(-152);
+echo $testPrime->isPrime(1.65*145);
+
+/*Sum Array*/
+
+$arraySum = array(4,1,5);
+echo array_sum($arraySum);
+echo max($arraySum);
+
+?>
