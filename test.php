@@ -26,18 +26,21 @@ echo $testPrime->isPrime(1.65*145);
 /*Sum Array*/
 class testArray {
 	function sumArray($array) {
+		$flag=true;
 		for ($x=0;$x<count($array);$x++) {
-			if (!is_integer($array[$x])) {
+			if (!is_int($array[$x])==true) {
 				echo "<br>";echo "Array contains non-integer value.";
+				$flag  =  false;
 				break;
+			
 			}
-			else {
+			else if ($flag == false) {
 				echo "<br>";echo "Tổng các số của array là ".array_sum($array);
 				echo "<br>";echo "Số lớn nhất của array là ".max($array);
-				break;
+				
 			}
 		}; 
 	}
 };
  $testArray = new testArray;
- echo $testArray->sumArray(array(2,4,6,75,41,869,4));
+ echo $testArray->sumArray(array(2,4,6,75,41.97,869,4));
