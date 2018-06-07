@@ -28,13 +28,13 @@ class testArray {
 	function sumArray($array) {
 		$flag=true;
 		for ($x=0;$x<count($array);$x++) {
-			if (!is_int($array[$x])==true) {
+			if (!is_int($array[$x])) {
 				echo "<br>";echo "Array contains non-integer value.";
 				$flag  =  false;
 				break;
 			
 			}
-			else if ($flag == false) {
+			if ($flag == true) {
 				echo "<br>";echo "Tổng các số của array là ".array_sum($array);
 				echo "<br>";echo "Số lớn nhất của array là ".max($array);
 				break;
@@ -44,4 +44,4 @@ class testArray {
 	}
 };
  $testArray = new testArray;
- echo $testArray->sumArray(array(2,4,6,75,41,869,4));
+ echo $testArray->sumArray(array(2,4,6.675,75,41,869,4));
