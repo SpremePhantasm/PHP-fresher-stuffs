@@ -26,7 +26,15 @@ echo $testPrime->isPrime(1.65*145);
 /*Sum Array*/
 
 $arraySum = array(4,1,5);
-echo array_sum($arraySum);
-echo max($arraySum);
-
+for ($x=0;$x<count($arraySum);$x++) {
+	if (!is_integer($arraySum($x)) {
+		echo "Array contains non-integer value.";
+		break;
+	}
+	else {
+		echo array_sum($arraySum);
+		echo max($arraySum);
+		break;
+	}
+}
 ?>
