@@ -13,11 +13,11 @@ class testPrime {
 	function isPrime($b) {
 		if (is_int($b) and $b>0) {
 		for ($x=3;$x<($b/2);$x++) {
-			if (($b%$x)==0) {echo $b." không phải là số nguyên tố"; break;}
+			if (($b%$x)==0) {echo "<br>";echo $b." không phải là số nguyên tố"; break;}
 		};
-		echo $b." là số nguyên tố";
+		echo "<br>";echo $b." là số nguyên tố";
 	}
-	else { echo $b." không phải là số nguyên tố";}
+	else { echo "<br>"; echo $b." không phải là số nguyên tố";}
 	}
 };
 $testPrime = new testPrime;
@@ -28,12 +28,12 @@ class testArray {
 	function sumArray($array) {
 		for ($x=0;$x<count($array);$x++) {
 			if (!is_integer($array[$x])) {
-				echo "Array contains non-integer value.";
+				echo "<br>";echo "Array contains non-integer value.";
 				break;
 			}
 			else {
-				echo array_sum($array);
-				echo max($array);
+				echo "<br>";echo array_sum($array);
+				echo "<br>";echo max($array);
 				break;
 			}
 		}; 
