@@ -24,10 +24,10 @@ $testPrime = new testPrime;
 echo $testPrime->isPrime(1.65*145);
 
 /*Sum Array*/
-
-$arraySum = array(4,1,5);
-for ($x=0;$x<count($arraySum);$x++) {
-	if (!is_integer($arraySum($x)) {
+class testArray {
+	function sumArray($array) {
+		for ($x=0;$x<count($array);$x++) {
+	if (!is_integer($array($x) {
 		echo "Array contains non-integer value.";
 		break;
 	}
@@ -36,5 +36,8 @@ for ($x=0;$x<count($arraySum);$x++) {
 		echo max($arraySum);
 		break;
 	}
-}
-?>
+	}; 
+	};
+};
+ $testArray = new testArray;
+ echo $testArray->sumArray(2,4,6,75,41,869,4);
