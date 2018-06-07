@@ -35,14 +35,11 @@ class testArray {
 			
 			}
 		}; 
-			if ($flag == true) {
-				echo "<br>";echo "Tổng các số của array là ".array_sum($array);
-				echo "<br>";echo "Số lớn nhất của array là ".max($array);
-				
-				
+		if ($flag == true) {
+			echo "<br>";echo "Tổng các số của array là ".array_sum($array);
+			echo "<br>";echo "Số lớn nhất của array là ".max($array);	
 			}
-		
-	}
+		}
 };
  $testArray = new testArray;
  echo $testArray->sumArray(array(2,4,6,75,41,869,4));
