@@ -34,7 +34,7 @@ class testArray {
 				break;
 			
 			}
-			else {
+			else if ($flag == false) {
 				echo "<br>";echo "Tổng các số của array là ".array_sum($array);
 				echo "<br>";echo "Số lớn nhất của array là ".max($array);
 				break;
